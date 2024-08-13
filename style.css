@@ -1,0 +1,206 @@
+body, html{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+  background-color: black;
+}
+
+/*Encabezado*/
+.navbar-brand img {
+  margin: 0;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.navbar-brand {
+  transform: translateX(650%);
+}
+
+  /*Carrusel*/
+  
+  .carousel-inner {
+    padding: 0;
+    left: 0;
+    right: auto;
+   
+  }
+  .carousel-inner h1 {
+    font-size: 6rem;
+    color: white;
+    padding: 10px;
+    
+  }
+  .card-img-top:hover{
+    transform:scale(1.5s);
+
+  }
+  h1 span {
+    transition: 2s;
+    cursor: pointer;
+    margin: 20px;
+  }
+
+  h1:hover span {
+    color: white;
+    text-shadow:
+      0 0 10px #DDAF57,
+      0 0 20px #DDAF57,
+      0 0 40px #DDAF57,
+      0 0 80px #DDAF57;
+  }
+  .card {
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    z-index: 2;
+  }
+  .card-container:hover .card:not(:hover) {
+    opacity: 0.6;
+  }
+  .carousel-item img.estrellas {
+    height: 300px;
+    object-fit: contain;
+    justify-content: center;
+    top: 0;
+  }
+  .carousel-caption p {
+    color: white;
+  }
+  .carousel-caption h2{
+    color: white;
+    justify-content: center;
+  }
+
+  /*Productos*/
+  .btn-primary {
+    margin: 50px auto; /* Centra el botón horizontalmente */
+    background: rgb(176,77,249);
+    background: linear-gradient(90deg, rgba(176,77,249,1) 0%, rgba(148,115,239,1) 51%, rgba(96,135,235,1) 100%);
+    color: #fff;
+    width: 100px;
+    display: block; /* Asegura que el botón ocupe todo el ancho disponible */
+    text-align: center; /* Asegura que el texto dentro del botón esté centrado */
+}
+
+  /*opiniones*/
+  .w-100{
+    transform: translateY(-70px);
+  
+  }
+
+  /*contacto*/
+  .container-fluid{
+    margin: 100px;
+  }
+  
+  .lh-1{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /*Registro*/
+  article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+.img-box img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin: 20px;
+    align-items: center;
+}
+
+.form-box {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px white;
+    text-align: center;
+    transform: translateY(10%);
+}
+
+.form-box h2 {
+    margin: 50px;
+    color: white;
+}
+
+.btn-outline-light {
+    background: rgb(176,77,249);
+    background: linear-gradient(90deg, rgba(176,77,249,1) 0%, rgba(148,115,239,1) 51%, rgba(96,135,235,1) 100%);
+    color: #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#oferta {
+    color: #DDAF57;
+    
+}
+
+input {
+    background-color: white;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding-left: 20px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+}
+
+input:hover {
+    box-shadow: 5px 5px 5px grey;
+}
+
+.s2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.w-100 {
+  transform: translateY();
+}
+
+  /*Footer*/
+  footer{
+    background: rgb(176,77,249);
+    background: linear-gradient(90deg, rgba(176,77,249,1) 0%, rgba(148,115,239,1) 51%, rgba(96,135,235,1) 100%);;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  footer .rrss{
+    position: relative;
+    display: flex;
+    right: 40px;
+  }
+
+  footer .rrss li{
+    list-style: none;
+  }
+
+  footer .rrss li a img{
+    margin: 10px;
+    width: 25px;
+    filter:invert(90%);
+  }
+  .ver-mas-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
